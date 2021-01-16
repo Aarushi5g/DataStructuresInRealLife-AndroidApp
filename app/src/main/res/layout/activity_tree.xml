@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/scroll"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/primary"
+    tools:context=".Tree">
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:descendantFocusability="blocksDescendants">
+
+        <TextView
+            android:id="@+id/treedefine"
+            android:layout_width="336dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_corner"
+            android:fontFamily="@font/work_sans_regular"
+            android:gravity="center"
+            android:lineSpacingExtra="3sp"
+            android:padding="7dp"
+            android:text="@string/treedefine"
+            android:textColor="@color/textOnSecondary"
+            android:textIsSelectable="true"
+            android:textSize="15sp"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:id="@+id/treeTextProblem"
+            android:layout_width="345dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/work_sans_regular"
+            android:lineSpacingExtra="2dp"
+            android:padding="10dp"
+            android:text="@string/treeproblem"
+            android:textColor="@color/textOnSecondary"
+            android:textIsSelectable="true"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/treeImageProblem"
+            android:layout_width="360dp"
+            android:layout_height="335dp"
+            android:contentDescription="@string/treeproblem"
+            android:src="@drawable/tree1" />
+
+        <Button
+            android:textColor="@color/tree_100"
+            android:id="@+id/CodeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@font/work_sans_semibold"
+            android:text="@string/code"
+            app:rippleColor="@color/tree_100"
+            android:onClick="CodeClicked"/>
+
+        <Button
+            android:id="@+id/treeButtonS1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/work_sans_semibold"
+            android:text="@string/treeb1"
+            app:rippleColor="@color/tree_100"
+            android:onClick="b1Clicked"/>
+
+        <Button
+            android:id="@+id/treeButtonS2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:fontFamily="@font/work_sans_semibold"
+            android:layout_marginBottom="10dp"
+            android:text="@string/treeb2"
+            app:rippleColor="@color/tree_100"
+            android:onClick="b2Clicked"/>
+
+        <TextView
+            android:id="@+id/treeTextS1"
+            android:layout_width="350dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="20dp"
+            android:lineSpacingExtra="2dp"
+            android:padding="10dp"
+            android:fontFamily="@font/work_sans_regular"
+            android:text="@string/trees1"
+            android:textColor="@color/textOnSecondary"
+            android:textIsSelectable="true"
+            android:textSize="15sp"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/treeImageS1"
+            android:layout_width="360dp"
+            android:layout_height="335dp"
+            android:contentDescription="@string/treeproblem"
+            app:srcCompat="@drawable/tree2"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/treeTextS2"
+            android:layout_width="350dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="20dp"
+            android:lineSpacingExtra="2dp"
+            android:padding="10dp"
+            android:fontFamily="@font/work_sans_regular"
+            android:text="@string/trees2"
+            android:textColor="@color/textOnSecondary"
+            android:textIsSelectable="true"
+            android:textSize="15sp"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/treeImageS2"
+            android:layout_width="360dp"
+            android:layout_height="335dp"
+            android:layout_marginTop="0dp"
+            android:adjustViewBounds="false"
+            android:contentDescription="@string/treeproblem"
+            app:srcCompat="@drawable/tree3"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+</ScrollView>

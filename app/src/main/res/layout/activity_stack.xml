@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@+id/scroll"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/primary"
+    tools:context=".Stack">
+
+    <LinearLayout
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusableInTouchMode="true"
+        android:descendantFocusability="blocksDescendants">
+
+        <TextView
+            android:id="@+id/stackdefine"
+            android:layout_width="336dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/rounded_corner"
+            android:fontFamily="@font/work_sans_regular"
+            android:gravity="center"
+            android:lineSpacingExtra="3sp"
+            android:padding="8dp"
+            android:text="@string/stackdefine"
+            android:textColor="@color/textOnSecondary"
+            android:textIsSelectable="true"
+            android:textSize="14sp"
+            android:textStyle="normal|bold" />
+
+        <TextView
+            android:id="@+id/stackTextProblem"
+            android:layout_width="345dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/work_sans_regular"
+            android:lineSpacingExtra="2dp"
+            android:padding="10dp"
+            android:text="@string/stackproblem"
+            android:textColor="@color/textOnSecondary"
+            android:textIsSelectable="true"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/stackImageProblem"
+            android:layout_width="360dp"
+            android:layout_height="335dp"
+            android:contentDescription="@string/stackproblem"
+            android:src="@drawable/stack1" />
+
+        <Button
+            android:textColor="@color/stack_100"
+            android:id="@+id/CodeButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@font/work_sans_semibold"
+            android:text="@string/code"
+            app:rippleColor="@color/stack_100"
+            android:onClick="CodeClicked"/>
+
+        <Button
+            android:id="@+id/stackButtonS1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/work_sans_semibold"
+            android:text="@string/stackb1"
+            app:rippleColor="@color/stack_100"
+            android:onClick="b1Clicked"/>
+
+        <Button
+            android:id="@+id/stackButtonS2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:fontFamily="@font/work_sans_semibold"
+            android:layout_marginBottom="10dp"
+            android:text="@string/stackb2"
+            app:rippleColor="@color/stack_100"
+            android:onClick="b2Clicked"/>
+
+        <TextView
+            android:id="@+id/stackTextS1"
+            android:layout_width="350dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="20dp"
+            android:lineSpacingExtra="2dp"
+            android:padding="10dp"
+            android:fontFamily="@font/work_sans_regular"
+            android:text="@string/stacks1"
+            android:textColor="@color/textOnSecondary"
+            android:textIsSelectable="true"
+            android:textSize="15sp"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/stackImageS1"
+            android:layout_width="360dp"
+            android:layout_height="335dp"
+            android:contentDescription="@string/stackproblem"
+            app:srcCompat="@drawable/stack2"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/stackTextS2"
+            android:layout_width="350dp"
+            android:layout_height="140dp"
+            android:layout_marginTop="20dp"
+            android:lineSpacingExtra="2dp"
+            android:padding="10dp"
+            android:fontFamily="@font/work_sans_regular"
+            android:text="@string/stacks2"
+            android:textColor="@color/textOnSecondary"
+            android:textIsSelectable="true"
+            android:textSize="15sp"
+            android:visibility="gone"/>
+
+        <ImageView
+            android:id="@+id/stackImageS2"
+            android:layout_width="360dp"
+            android:layout_height="335dp"
+            android:layout_marginTop="0dp"
+            android:adjustViewBounds="false"
+            android:contentDescription="@string/stackproblem"
+            app:srcCompat="@drawable/stack3"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+</ScrollView>

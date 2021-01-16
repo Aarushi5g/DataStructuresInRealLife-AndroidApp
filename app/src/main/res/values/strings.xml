@@ -1,0 +1,785 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">Data Structures in Real Life</string>
+    <string name="array">Array</string>
+    <string name="linked_list">Linked List</string>
+    <string name="stack">Stack</string>
+    <string name="queue">Queue</string>
+    <string name="heap">Heap</string>
+    <string name="hash_table">Hash Table</string>
+    <string name="tree">Tree</string>
+    <string name="graph">Graph</string>
+
+    <string name="code">Code</string>
+
+    <string name="arraydefine">An array is a collection of similar items stored at contiguous memory locations. It acts as a container which can hold a fix number of items and these items should be of the same type. Most of the data structures make use of arrays to implement their algorithms.</string>
+    <string name="linked_listdefine">A Linked List is a list of elements that are randomly stored in the memory and linked together. It consists of nodes where each node contains a data field and a reference to the next node in the list. They are used over arrays because the memory is allocated dynamically to these nodes.</string>
+    <string name="stackdefine">A Stack is an abstract linear data structure that allows addition and removal of elements in a particular order according to the LIFO (Last In First Out) principle. Every time an element is added, it goes on the top of the stack and the only element that can be removed is also the one at the top of the stack, just like a pile of objects.</string>
+    <string name="queuedefine">A Queue is also an abstract linear data structure that follows the FIFO (First In First Out) methodology, i.e., the data item stored first will be accessed first. One end of the queue is always used to insert data (enqueue) and the other is used to remove data (dequeue).</string>
+    <string name="heapdefine">Heap is a special case of balanced binary tree data structure. A priority queue is a special type of queue in which each element is associated with a priority and is served according to its priority. Heaps are great for implementing a priority queue because of the largest and smallest element at the root of the tree for a max-heap and a min-heap respectively. </string>
+    <string name="hash_tabledefine">Hash Table is a data structure which stores data in the form of key-value pairs. Thus, it becomes a data structure in which insertion and search operations are very fast if we know the index of the desired data. Hashing is a technique to convert a range of key values into a range of indexes of an array, generally, using a modulo operator.</string>
+    <string name="treedefine">A tree is a non-linear hierarchical data structure that consists of nodes connected by edges. Non-linear because it does not store data in a sequential manner. In a tree, the topmost node is known as a root node. Each node contains some data and the link or reference of other nodes that can be called its children.</string>
+    <string name="graphdefine">A Graph is a non-linear data structure consisting of vertices and edges, used to represent elements that share connections. Edges can have a value associated with them, called weight. If a graph has many edges, it’s called a dense graph. Otherwise, it’s called a sparse graph.</string>
+
+    <string name="arrayproblem">We all must have used the <font color="#B2EBF2">Online Ticket Booking system</font> at least once, it might be for booking tickets for a train, a bus, a flight, a movie or any other show. If we want to book a seat, suppose for a movie, just visit the online platform, select a movie and a particular time for which it displays a 2D array representing a theatre. </string>
+    <string name="linked_listproblem">We all have used a <font color="#F8BBD0">Music Player</font> to entertain ourselves. And we add our favourite songs to it. Suppose you have 3 songs in your playlist. After playing Song 1, Song 2 will be played, and then the next, it doesn\'t stop after playing one song. As the songs are connected in the playlist, nodes are connected in a Singly linked list. Here the songs are connected in a single direction, thus we cannot go backwards.</string>
+    <string name="stackproblem">We all have used a <font color="#E1BEE7">Text Editor</font> and still use it often, whether it be Notepad, WordPad, etc. You must have come across the Undo and the Redo operations present in the Editor. The Undo operation is used to revert the effect of the last operation done whereas the Redo operation is used to restore the actions done using undo function. These operations are maintained in two separate stacks- UNDO and REDO.</string>
+    <string name="queueproblem">We all have used or seen a <font color="#DCEDC8">shared printer</font>, either at computer labs or at an office. Ever wondered how each computer in the network is connected to the printer to get the job done? The printer maintains a printing \"queue\" internally, and prints the jobs in sequence based on which came first, i.e. First In, First Out.</string>
+    <string name="heapproblem">You must have been to an <font color="#ffcdd2">Adventure park</font>, or at least seen one in the movies. Queues at some ride at the park leverage a priority queue. That is there are some ways to get ahead of others in the waiting line either through special passes or being a single rider. These circumstances give priority to the individuals vs the other individuals in the ride line.</string>
+    <string name="hash_tableproblem">If you have ever coded, you must have used a <font color="#B3E5FC">compiler</font>. Also getting errors is very common. For the identification of the errors in entering keywords in the compiler, the keywords are stored in a hash table. There are 32 keywords in C language. The hash function takes the lexeme that is the input keyword and produces a unique value from it.</string>
+    <string name="treeproblem">If you use an operating system, something that you probably use every day is the <font color="#B2DFDB">file system</font>. In a file system, the files and folders are structured as a tree. You can follow a path from the root that will uniquely identify a subfolder (and all the files in it). </string>
+    <string name="graphproblem">Do you use <font color="#FFECB3">Google Maps</font>? If your answer is yes, then you’ve definitely used graphs. GPS systems use graphs to find the shortest path from one destination to another. In a graph representing roads and locations, giving the distance as the weight is a logical choice.</string>
+
+    <string name="arrayb1">↓ Select a seat ↓</string>
+    <string name="arrayb2">↓ book and checkout ↓</string>
+
+    <string name="linked_listb1">↓ Doubly Linked List ↓</string>
+    <string name="linked_listb2">↓ Circular Doubly Linked List ↓</string>
+
+    <string name="stackb1">↓ UNDO ↓</string>
+    <string name="stackb2">↓ REDO ↓</string>
+
+    <string name="queueb1">↓ Add to Print Queue ↓</string>
+    <string name="queueb2">↓ Print ↓</string>
+
+    <string name="heapb1">↓ Insert with priority ↓</string>
+    <string name="heapb2">↓ Dequeue highest priority ↓</string>
+
+    <string name="hash_tableb1">↓ No Error ↓</string>
+    <string name="hash_tableb2">↓ Error ↓</string>
+
+    <string name="treeb1">↓ Insert a file ↓</string>
+    <string name="treeb2">↓ Move A Section ↓</string>
+
+    <string name="graphb1">↓ Shortest path ↓</string>
+    <string name="graphb2">↓ Removing an edge ↓</string>
+
+    <string name="arrays1">From the 2D array displayed, select a particular seat, suppose seat[0][2] in the following implementation, the selected seat will be booked.</string>
+    <string name="arrays2">After the seats have been selected, the checkout amount is calculated using the basic multiplication operation.</string>
+
+    <string name="linked_lists1">In a Doubly Linked List, the nodes are connected in both directions, so we can go either way. That is from Song 2, Song 3 as well as Song 1 can be played. Bidirectional navigation is possible in this case.</string>
+    <string name="linked_lists2">After all the songs are played, the music player will stop working. But sometimes we play a playlist in a repeat mode, so that after the last song is completed, the first song starts playing again. And it will play in a cyclic mode and never stop.</string>
+
+    <string name="stacks1">The UNDO stack is used to store the history of all the operations that have been processed in the text editor. Whenever the Undo operation is called by the you, simply the top element from the UNDO stack is popped off and pushed to the REDO stack.</string>
+    <string name="stacks2">But if you want to perform a Redo operation, just pop the top of the element of REDO stack and push it to UNDO stack.</string>
+
+    <string name="queues1">When you request to print a file, your request is added to the print queue. It remains in the print queue until  it is processed or serviced. </string>
+    <string name="queues2">When your request reaches the front of the print queue, your file is printed. This ensures that only one person at a time has access to the printer and this access is given on a first-come first-served basis.</string>
+
+    <string name="heaps1">Riders with high priority are sent forward in the waiting line ahead of the ones without any passes, or those who want to ride along with their family. Insertion according to the priority takes place in the queue.</string>
+    <string name="heaps2">Riders with high priority have to wait the least to enjoy the ride as they are dequeued first from the queue.</string>
+
+    <string name="hash_tables1">If the entered keyword is a part of the hash table for the keywords of C language, the compiler doesn\'t show any error and the code compiles and runs successfully. </string>
+    <string name="hash_tables2">If the entered keyword doesn\'t match with any keyword present in the hash table, then an error is displayed. Also, if any identifier for example the variable matches with any of the keywords, an error is shown.</string>
+
+    <string name="trees1">To insert a file to an existing folder, simply create a file under a specific folder. In case of trees, create a file, link it to it\'s parent node and to children nodes if any.</string>
+    <string name="trees2">In a tree, you can move an entire section of the tree (called a subtree) to a different position in the tree without affecting the lower levels of the hierarchy. Similarly in case of files and folders.</string>
+
+    <string name="graphs1">The GPS System always shows you the best possible path in accordance with the shortest distance, which can be found in terms of weight that is given to each edge in the graph structure.</string>
+    <string name="graphs2">An amazing feature of the GPS is to update the path if any construction or obstacle is reported. This is simply done by removing that particular edge from the graph structure.</string>
+
+    <string name="array_code" translatable="false">import java.util.*;
+
+        \n\nclass DS{
+           \n\tint quantity = 0;
+            \n\tvoid availability(int array[][]){
+                \n\t\tint count = 0;
+                \n\t\tfor(int i = 0 ; i&lt;5; i++){
+                   \n\t\t\tfor(int j = 0; j&lt;7; j++){
+                      \n\t\t\t\tif(array[i][j] == 0){
+                         \n\t\t\t\t\tcount++;
+                      \n\t\t\t\t}
+                   \n\t\t\t}
+                \n\t\t}
+                \n\t\tSystem.out.printf(\"Seats Available: %d\", count);
+             \n\t}
+
+             \n\n\tvoid bookSeat(int array[][], int i, int j){
+        <font color="#B2EBF2">\n\t//where seat[i][j] is selected by the user</font>
+                \n\t\tif(array[i][j]==0){
+                    \n\t\t\tarray[i][j]=1;
+                    \n\t\t\tSystem.out.printf(\"Seat[%d][%d] booked!!\", i, j);
+                    \n\t\t\tquantity++;
+                \n\t\t}
+                 \n\t\telse{
+                    \n\t\t\tSystem.out.printf(\"Seat is already booked! Choose another.\");
+                \n\t\t}
+             \n\t}
+
+             \n\n\tvoid cost(){
+              \n\t\tint totalcost = quantity*300;
+              \n\t\tSystem.out.printf(\"Checkout amount: %d\", totalcost);
+           \n\t}
+        \n}
+
+        \n\npublic class Main{
+            \n\tpublic static void main( String args[]){
+
+                \n\t\tint[][] theatre = new int[5][7];
+            <font color="#B2EBF2">\n\t\t/*
+            \n\t\tGo to the online movie booking site
+            \n\t\tSelect a movie and a specific time
+            \n\t\tTheatre seats are displayed*/</font>
+            \n\t\tDS o = new DS();
+            \n\t\tint choice;
+            \n\t\tdo{
+            \n\t\t\tSystem.out.println(\\n\"ONLINE MOVIE SEAT BOOKING SYSTEM\");
+            \n\t\t\tSystem.out.println(\"1) Check the number of available seats\\n2) Book a seat\\n3) Checkout (300 each)\\n4) Exit\");
+            \n\t\t\tSystem.out.println(\"Enter a choice: \");
+            \n\t\t\tScanner s = new Scanner(System.in);
+            \n\t\t\tchoice=s.nextInt();
+                 \n\t\t\tswitch(choice){
+                 \n\t\t\t\tcase 1:
+                    \n\t\t\t\t\to.availability(theatre);
+                    \n\t\t\t\t\tbreak;
+                 \n\t\t\t\tcase 2:
+                    \n\t\t\t\t\tSystem.out.println("Enter seat number in [i][j]: ");
+				    \n\t\t\t\t\tint i = s.nextInt();
+				    \n\t\t\t\t\tint j = s.nextInt();
+					\n\t\t\t\t\to.bookSeat(theatre, i, j);
+                    \n\t\t\t\t\tbreak;
+                 \n\t\t\t\tcase 3:
+                    \n\t\t\t\t\to.cost();
+                    \n\t\t\t\t\tbreak;
+                 \n\t\t\t\tcase 4:
+                    \n\t\t\t\t\tSystem.exit(0);
+                    \n\t\t\t\t\tbreak;
+                 \n\t\t\t\tdefault:
+                    \n\t\t\t\t\tSystem.out.println(\"Choose the correct choice!\");
+                    \n\t\t\t\t\tbreak;
+                 \n\t\t\t}
+              \n\t\t}
+              \n\t\twhile(choice!=4);
+            \n\t}
+        \n}
+
+    </string>
+
+    <string name="linked_list_code">import java.util.*;
+
+\n\nclass SongNode{
+    \n\tint songNumber;
+    \n\tSongNode next;
+    \n\tSongNode (int number){
+        \n\t\tsongNumber = number;
+    \n\t}
+\n}
+
+\n\nclass DS{
+    \n\tSongNode head;
+    \n\tDS(int n){
+        \n\t\tSongNode a = new SongNode(n);
+        \n\t\thead = a;
+    \n}
+
+    \n\t\nvoid display(){
+        \n\t\tSongNode playing = head;
+        \n\t\twhile( playing != null){
+            \n\t\t\tSystem.out.println(\"Song \"+ playing.songNumber );
+            \n\t\t\tplaying = playing.next;
+        \n\t\t}
+
+    \n\t}
+
+    \n\t\nvoid insertInPlaylist(SongNode n){
+        \n\t\t<font color="#F8BBD0">//to add a new song to a playlist, you tack it on to the end in constant time— O(1) operation</font>
+        \n\t\tSongNode playing = head;
+        \n\t\twhile( playing.next != null){
+            \n\t\t\tplaying = playing.next;
+        \n\t\t}
+        \n\t\tplaying.next = n;
+        \n\t\tn.next= null;
+    \n\t}
+
+    \n\t\nvoid delete(int key){
+        \n\t\tSongNode playing = head, flag = null;
+        \n\t\tif (playing != null &amp;&amp; playing.songNumber == key){
+        \n\t\t\t<font color="#F8BBD0">//head contains key</font>
+            \n\t\t\thead = playing.next;
+        \n\t\t\t/<font color="#F8BBD0">/update the head to the next song</font>
+            \n\t\t\treturn;
+        \n\t\t}
+        \n\t\twhile (playing != null &amp;&amp; playing.songNumber!= key){
+            \n\t\t\tflag = playing;
+            \n\t\t\tplaying = playing.next;
+        \n\t\t}
+        \n\t\tif (playing == null)
+        \n\t\t\treturn;
+        \n\t\tflag.next = playing.next;
+        \n\t\t<font color="#F8BBD0">/*
+        \n\t\tNode containing the key will be considered garbage now
+            \n\t\tAlso this garbage is cleared automatically in java */</font>
+    \n\t}
+\n}
+
+\n\npublic class Main{
+    \n\tpublic static void main (String args[]){
+        \n\t\tDS o = new DS(1);
+
+        \n\n\t\tSongNode a, b, c, d;
+        \n\t\ta = new SongNode(2);
+        \n\t\tb = new SongNode(3);
+
+        \n\n\t\to.head.next= a;
+        \n\t\ta.next= b;
+
+        \n\t\tSongNode x;
+
+        \n\n\t\tint choice;
+        \n\t\tdo{
+        \n\t\t\tSystem.out.println(\"\\nWELCOME TO DS MUSIC PLAYER\");
+        \n\t\t\tSystem.out.println(\"1) Display all the songs\\n2) Insert song into Playlist\\n3) Delete a song from the playlist\\n4) Exit\");
+        \n\t\t\tSystem.out.println(\"Enter a choice: \");
+        \n\t\t\tScanner s = new Scanner(System.in);
+        \n\t\t\tchoice=s.nextInt();
+            \n\t\t\t\tswitch(choice){
+            \n\t\t\t\t\tcase 1:
+                \n\t\t\t\t\t\to.display();
+                \n\t\t\t\t\t\tbreak;
+            \n\t\t\t\t\tcase 2:
+                \n\t\t\t\t\t\tint n;
+                \n\t\t\t\t\t\tSystem.out.print(\"Enter the song to insert: Song \");
+                \n\t\t\t\t\t\tn = s.nextInt();
+                \n\t\t\t\t\t\tx = new SongNode(n);
+                \n\t\t\t\t\t\to.insertInPlaylist(x);
+                \n\t\t\t\t\t\tSystem.out.printf(\"Song %d added to your playlist!\n\", n);
+                \n\t\t\t\t\t\tbreak;
+            \n\t\t\t\t\tcase 3:
+                \n\t\t\t\t\t\tint m;
+                \n\t\t\t\t\t\tSystem.out.print(\"Enter the song to delete: Song \");
+                \n\t\t\t\t\t\tm = s.nextInt();
+                \n\t\t\t\t\t\to.delete(m);
+                \n\t\t\t\t\t\tSystem.out.printf(\"Song %d deleted from playlist!\n\", m);
+                \n\t\t\t\t\t\tbreak;
+            \n\t\t\t\t\tcase 4:
+                \n\t\t\t\t\t\tSystem.exit(0);
+                \n\t\t\t\t\t\tbreak;
+            \n\t\t\t\t\tdefault:
+                \n\t\t\t\t\t\tSystem.out.println(\"Choose the correct choice!\");
+                \n\t\t\t\t\t\tbreak;
+            \n\t\t\t\t}
+        \n\t\t}
+        \n\t\twhile(choice!=4);
+    \n\t}
+\n}
+    </string>
+
+    <string name="stack_code" tools:ignore="TypographyOther">import java.util.*;
+
+\n\nclass CharNode{
+    \n\tchar character;
+    \n\tCharNode next;
+    \n\tCharNode (char c){
+        \n\t\tcharacter = c;
+    \n\t}
+\n}
+
+\n\nclass DS{
+    \n\tCharNode undoHead, redoHead, undoTop, redoTop;
+    \n\tDS(){
+        \n\t\tundoHead = null;
+        \n\t\tredoHead = null;
+        \n\t\tundoTop = null;
+        \n\t\tredoTop = null;
+    \n\t}
+
+        \n\n\tboolean isBlank(){ <font color="#E1BEE7">//nothing written in the editor</font>
+        \n\t\tif(undoTop == null)
+          \n\t\t\treturn true;
+        \n\t\treturn false;
+    \n\t}
+
+        \n\n\tvoid write(CharNode c){<font color="#E1BEE7"> //write characters</font>
+        \n\t\tif(undoTop == null){
+            \n\t\t\tundoHead = c;
+            \n\t\t\tundoTop = c;
+        \n\t\t}
+        \n\t\telse{
+            \n\t\t\tundoTop.next = c;
+            \n\t\t\tundoTop = c;
+        \n\t\t}
+    \n\t}
+
+    \n\n\tvoid undo(){
+        \n\t\tif(undoTop == null){
+            \n\t\t\tSystem.out.println(\"No text written!\");
+        \n\t\t}
+        \n\t\telse{
+            \n\t\t\tchar x = undoTop.character;
+        \n\t\t\t<font color="#E1BEE7">//only one character written</font>
+            \n\t\t\tif( undoHead == undoTop){
+                \n\t\t\t\tundoHead = null;
+                \n\t\t\t\tundoTop = null;
+            \n\t\t\t}
+            \n\t\t\telse{
+                \n\t\t\t\tCharNode cursor = undoHead;
+                \n\t\t\t\twhile(cursor.next != undoTop)
+                    \n\t\t\t\t\tcursor = cursor.next;
+                \n\t\t\t\tcursor.next = null;
+                \n\t\t\t\tundoTop = cursor;
+            \n\t\t\t}
+            \n\t\t\tSystem.out.printf(\"The last entered character %c removed!\", x);
+            \n\t\t\tCharNode n = new CharNode(x);
+            \n\t\t\tif(redoTop == null){
+                \n\t\t\t\tredoHead = n;
+                \n\t\t\t\tredoTop = n;
+            \n\t\t\t}
+            \n\t\t\telse{
+                \n\t\t\t\tredoTop.next = n;
+                \n\t\t\t\tredoTop = n;
+            \n\t\t\t}
+        \n\t\t}
+    \n\t}
+
+    \n\n\tvoid redo(){
+        \n\t\tif(redoTop == null){
+            \n\t\t\tSystem.out.println(\"Nothing under undo!\");
+        \n\t\t}
+        \n\t\telse{
+            \n\t\t\tchar y = redoTop.character;
+            \n\t\t\tif( redoHead == redoTop){
+                \n\t\t\t\tredoHead = null;
+                \n\t\t\t\tredoTop = null;
+            \n\t\t\t}
+            \n\t\t\telse{
+                \n\t\t\t\tCharNode cursor = redoHead;
+                \n\t\t\t\twhile(cursor.next != redoTop)
+                    \n\t\t\t\t\tcursor = cursor.next;
+                \n\t\t\t\tcursor.next = null;
+                \n\t\t\t\tredoTop = cursor;
+            \n\t\t\t}
+            \n\t\t\tCharNode m = new CharNode(y);
+            \n\t\t\tif(undoTop == null){
+                \n\t\t\t\tundoHead = m;
+                \n\t\t\t\tundoTop = m;
+            \n\t\t\t}
+            \n\t\t\telse{
+                \n\t\t\t\tundoTop.next = m;
+                \n\t\t\t\tundoTop = m;
+            \n\t\t\t}
+            \n\t\t\tSystem.out.println(\"Redone!\");
+        \n\t\t}
+
+    \n\t}
+
+    \n\n\tvoid display(){
+        \n\t\tCharNode cursor = undoHead;
+        \n\t\tSystem.out.print(\"Text: \");
+        \n\t\twhile(cursor!= null){
+            \n\t\t\tSystem.out.print(cursor.character);
+            \n\t\t\tcursor = cursor.next;
+        \n\t\t}
+    \n\t}
+
+\n}
+\n\npublic class Main{
+    \n\tpublic static void main(String args[]){
+        \n\t\tDS o = new DS();
+        \n\t\tint choice;
+        \n\t\tdo{
+        \n\t\tSystem.out.println(\"\\nWELCOME TO DS CHARACTER\n TEXT EDITOR\");
+        \n\t\tSystem.out.println(\"1) Write\\n2) Undo\\n3) Redo\\n4) Display the text\\n5) Exit\");
+        \n\t\tSystem.out.println(\"Enter a choice: \");
+        \n\t\tScanner s = new Scanner(System.in);
+        \n\t\tchoice=s.nextInt();
+            \n\t\t\tswitch(choice){
+            \n\t\t\tcase 1:
+                \n\t\t\t\tSystem.out.print(\"Enter a character you wish to write: \");
+                \n\t\t\t\tchar c = s.next().charAt(0);
+                \n\t\t\t\tCharNode a = new CharNode(c);
+                \n\t\t\t\to.write(a);
+                \n\t\t\t\tSystem.out.println(\"Character written!\");
+                \n\t\t\t\tbreak;
+            \n\t\t\tcase 2:
+                \n\t\t\t\to.undo();
+                \n\t\t\t\tbreak;
+            \n\t\t\tcase 3:
+                \n\t\t\t\to.redo();
+                \n\t\t\t\tbreak;
+            \n\t\t\tcase 4:
+                \n\t\t\t\to.display();
+                \n\t\t\t\tbreak;
+            \n\t\t\tcase 5:
+                \n\t\t\t\tSystem.exit(0);
+                \n\t\t\t\tbreak;
+            \n\t\t\tdefault:
+                \n\t\t\t\tSystem.out.println(\"Choose the correct choice!\");
+                \n\t\t\t\tbreak;
+            \n\t\t\t}
+        \n\t\t}
+        \n\t\twhile(choice!=5);
+    \n\t}
+\n}
+    </string>
+
+    <string name="queue_code" tools:ignore="TypographyOther">import java.util.*;
+
+\n\nclass PrintNode{
+    \n\tchar data;
+    \n\tPrintNode next;
+    \n\tPrintNode (char c){
+        \n\t\tdata = c;
+    \n\t}
+\n}
+
+\n\nclass DS{
+    \n\tPrintNode start, end;
+
+    \n\n\tDS(){
+       \n\tstart = null;
+        \n\tend = null;
+    \n\t}
+
+    \n\n\tvoid display(){
+        \n\t\tif(start == null){
+            \n\t\t\tSystem.out.println(\"Nothing to print!\");
+        \n\t\t}
+        \n\t\telse{
+            \n\t\t\tPrintNode temp = start;
+            \n\t\t\twhile (temp!= null){
+                \n\t\t\t\tSystem.out.printf(\"%c \", temp.data);
+                \n\t\t\t\ttemp = temp.next;
+            \n\t\t\t}
+        \n\t\t}
+    \n\t}
+
+    \n\n\tvoid add(PrintNode n){
+        \n\t\tif(start == null){
+            \n\t\t\tstart = n;
+            \n\t\t\tend = n;
+        \n\t\t}
+        \n\t\telse{
+            \n\t\t\tend.next = n;
+            \n\t\t\tend = n;
+        \n\t\t}
+        \n\t\tSystem.out.println(\"Added to the queue!\");
+    \n\t}
+
+    \n\n\tvoid print(){
+        \n\t\tif(start == null){
+            \n\t\t\tSystem.out.println(\"Nothing in queue!\");
+        \n\t\t}
+        \n\t\telse{
+            \n\t\t\tchar x = start.data;
+            \n\t\t\tPrintNode temp = start;
+            \n\t\t\tstart = start.next;
+        \n\t\t}
+        \n\t\tSystem.out.println(\"Printed!\");
+    \n\t}
+
+\n}
+\n\npublic class Main{
+    \n\tpublic static void main(String args[]) {
+        \n\t\tDS o = new DS();
+
+        \n\t\tint choice;
+        \n\t\tdo{
+        \n\t\t\tSystem.out.println(\"CONTROL THE PRINTER SYSTEM\");
+        \n\t\t\tSystem.out.println(\"1) Display the Printing queue\\n2) Add to Printing queue\\n3) Print\\n4) Exit\");
+        \n\t\t\tSystem.out.print(\"Enter a choice: \");
+        \n\t\t\tScanner s = new Scanner(System.in);
+        \n\t\t\tchoice=s.nextInt();
+            \n\t\t\tswitch(choice){
+            \n\t\t\t\tcase 1:
+                \n\t\t\t\t\to.display();
+                \n\t\t\t\t\tbreak;
+            \n\t\t\t\tcase 2:
+                \n\t\t\t\t\tSystem.out.print(\"Enter the data you wish to print: \");
+                \n\t\t\t\t\tchar c = s.next().charAt(0);
+                \n\t\t\t\t\tPrintNode a = new PrintNode(c);
+                \n\t\t\t\t\to.add(a);
+                \n\t\t\t\t\tbreak;
+            \n\t\t\t\tcase 3:
+                \n\t\t\t\t\to.print();
+                \n\t\t\t\t\tbreak;
+            \n\t\t\t\tcase 4:
+                \n\t\t\t\t\tSystem.exit(0);
+                \n\t\t\t\t\tbreak;
+            \n\t\t\t\tdefault:
+                \n\t\t\t\t\tSystem.out.println(\"Choose the correct choice!\");
+                \n\t\t\t\t\tbreak;
+            \n\t\t\t}
+        \n\t\t}
+        \n\t\twhile(choice!=4);
+    \n\t}
+\n}
+    </string>
+
+    <string name="heap_code">import java.util.*;
+
+\n\nclass Rider{
+    \n\tString name;
+	\n\tint priority;
+
+	\n\n\tRider(String name, int priority){
+	    \n\t\tthis.name = name;
+		\n\t\tthis.priority = priority;
+	\n\t}
+
+    \n\n\tString getName(){
+		\n\t\treturn name;
+	\n\t}
+\n}
+
+\n\nclass RiderCompare implements Comparator&lt;Rider&gt;{
+	\n\tpublic int compare(Rider r1, Rider r2){
+		\n\t\tif (r1.priority &lt; r2.priority)
+			\n\t\t\treturn 1;
+		\n\t\telse if (r1.priority &gt; r2.priority)
+			\n\t\t\treturn -1;
+		\n\t\treturn 0;
+	\n\t}
+\n}
+
+\n\npublic class Main{
+	\n\tpublic static void main(String[] args){
+		\n\t\tScanner in = new Scanner(System.in);
+		\n\t\tPriorityQueue&lt;Rider&gt; r = new
+		\n\t\tPriorityQueue&lt;Rider&gt;(5, new RiderCompare());
+        \n\t\tRider rider1 = new Rider(\"Rider1\", 2); <font color="#ffcdd2">//single rider family</font>
+		\n\t\tr.add(rider1);
+        \n\t\tRider rider2 = new Rider(\"Rider2\", 4); <font color="#ffcdd2">//fastpass Ticket</font>
+		\n\t\tr.add(rider2);
+        \n\t\tRider rider3 = new Rider(\"Rider3\", 3); <font color="#ffcdd2">//handicapped individual</font>
+		\n\t\tr.add(rider3);
+        \n\t\tRider rider4 = new Rider(\"Rider4\", 1); <font color="#ffcdd2">//families, groups</font>
+		\n\t\tr.add(rider4);
+		\n\t\tSystem.out.println(\"Rider Priority Queue: \");
+		\n\t\twhile (!r.isEmpty()) {
+		    \n\t\t\tSystem.out.println(r.poll().getName());
+		\n\t\t}
+	\n\t}
+\n}
+
+
+
+
+
+    </string>
+
+    <string name="hash_table_code">import java.util.*;
+
+\n\nclass DS{
+    \n\tpublic int getKey(String word){
+        <font color="#B3E5FC">\n\t\t//to convert lexeme to value</font>
+        \n\t\tint sum = 0;
+        \n\t\tfor(int i=0; i&lt;word.length(); i++){
+            \n\t\t\tsum = sum + (int)word.charAt(i);
+        \n\t\t}
+        \n\t\treturn sum+1 % 32;
+    \n\t}
+\n}
+
+\n\npublic class Main{
+    \n\tpublic static void main( String args[]){
+        \n\t\tDS o = new DS();
+
+        \n\t\tHashtable&lt;String, Integer&gt; ht = new Hashtable&lt;String, Integer&gt;();
+        \n\t\t<font color="#B3E5FC">//adding the 30 keywords of C language</font>
+        \n\t\tint key = o.getKey(\"auto\"); ht.put(\"auto\", key);
+        \n\t\tkey = o.getKey(\"break\"); ht.put(\"break\", key);
+        \n\t\tkey = o.getKey(\"case\"); ht.put(\"case\", key);
+        \n\t\tkey = o.getKey(\"char\"); ht.put(\"char\", key);
+        \n\t\tkey = o.getKey(\"const\"); ht.put(\"const\", key);
+        \n\t\tkey = o.getKey(\"continue\"); ht.put(\"continue\", key);
+        \n\t\tkey = o.getKey(\"default\"); ht.put(\"default\", key);
+        \n\t\tkey = o.getKey(\"do\"); ht.put(\"do\", key);
+        \n\t\tkey = o.getKey(\"double\"); ht.put(\"double\", key);
+        \n\t\tkey = o.getKey(\"else\"); ht.put(\"else\", key);
+        \n\t\tkey = o.getKey(\"enum\"); ht.put(\"enum\", key);
+        \n\t\tkey = o.getKey(\"extern\"); ht.put(\"extern\", key);
+        \n\t\tkey = o.getKey(\"float\"); ht.put(\"float\", key);
+        \n\t\tkey = o.getKey(\"for\"); ht.put(\"for\", key);
+        \n\t\tkey = o.getKey(\"goto\"); ht.put(\"goto\", key);
+        \n\t\tkey = o.getKey(\"if\"); ht.put(\"if\", key);
+        \n\t\tkey = o.getKey(\"int\"); ht.put(\"int\", key);
+        \n\t\tkey = o.getKey(\"long\"); ht.put(\"long\", key);
+        \n\t\tkey = o.getKey(\"register\"); ht.put(\"register\", key);
+        \n\t\tkey = o.getKey(\"return\"); ht.put(\"return\", key);
+        \n\t\tkey = o.getKey(\"short\"); ht.put(\"short\", key);
+        \n\t\tkey = o.getKey(\"signed\"); ht.put(\"signed\", key);
+        \n\t\tkey = o.getKey(\"sizeof\"); ht.put(\"sizeof\", key);
+        \n\t\tkey = o.getKey(\"static\"); ht.put(\"static\", key);
+        \n\t\tkey = o.getKey(\"struct\"); ht.put(\"struct\", key);
+        \n\t\tkey = o.getKey(\"switch\"); ht.put(\"switch\", key);
+        \n\t\tkey = o.getKey(\"typedef\"); ht.put(\"typedef\", key);
+        \n\t\tkey = o.getKey(\"union\"); ht.put(\"union\", key);
+        \n\t\tkey = o.getKey(\"unsigned\"); ht.put(\"unsigned\", key);
+        \n\t\tkey = o.getKey(\"void\"); ht.put(\"void\", key);
+        \n\t\tkey = o.getKey(\"volatile\"); ht.put(\"volatile\", key);
+        \n\t\tkey = o.getKey(\"while\"); ht.put(\"while\", key);
+
+        \n\t\tSystem.out.println(ht);
+        \n\t\tSystem.out.print(\"Enter the keyword you wish to know exists: \");
+        \n\t\tScanner s = new Scanner(System.in);
+        \n\t\tString k = s.nextLine();
+        \n\t\tif(ht.containsKey(k)==true){
+            \n\t\t\tSystem.out.printf(\"C contains the keyword!\");
+        \n\t\t}
+        \n\t\telse{
+            \n\t\t\tSystem.out.println(\"Keyword not present in C!\");
+        \n\t\t}
+    \n\t}
+
+\n}
+
+
+    </string>
+    <string name="tree_code">class TreeNode{
+    \n\tString name;
+    \n\tTreeNode parent;
+    \n\tTreeNode left;
+    \n\tTreeNode right;
+    \n\tTreeNode(String name){
+        \n\t\tthis.name = name;
+        \n\t\tparent = null;
+        \n\t\tleft = null;
+        \n\t\tright = null;
+    \n\t}
+\n}
+
+\n\npublic class Main{
+    \n\tTreeNode root;
+    \n\tMain(TreeNode n){
+        \n\t\troot = n;
+    \n\t}
+
+        \n\n\tstatic void display(TreeNode n){ <font color="#B2DFDB">//pre-order traversal</font>
+        \n\t\tif(n!= null){
+          \n\t\t\tSystem.out.print(n.name + \" \");
+          \n\t\t\tdisplay(n.left);
+          \n\t\t\tdisplay(n.right);
+        \n\t\t}
+    \n\t}
+
+    \n\n\tstatic void displayF(TreeNode n){
+        \n\t\tif(n!=null){
+            \n\t\t\tchar c = n.name.charAt(0);
+        \n\t\t\tif (c ==\'F\'){
+            \n\t\t\t\tSystem.out.print(\"Folder found: \");
+            \n\t\t\t\tSystem.out.println(n.name);
+        \n\t\t\t}
+        \n\t\t\tdisplayF(n.left);
+        \n\t\t\tdisplayF(n.right);
+        \n\t\t}
+    \n\t}
+
+    \n\n\tpublic static void main(String args[]){
+        \n\t\tTreeNode a, b, c, d, e, f, g;
+
+        \n\n\t\ta = new TreeNode(\"Folder\"); <font color="#B2DFDB">//create root folder</font>
+        \n\t\tMain t = new Main(a);
+
+        \n\n\t\tb = new TreeNode(\"Folder1\"); <font color="#B2DFDB">//create subfolders</font>
+        \n\t\tc = new TreeNode(\"Folder2\");
+        \n\t\tt.root.left = b; <font color="#B2DFDB">//add them to the root folder</font>
+        \n\t\tt.root.right = c;
+
+        \n\n\t\td = new TreeNode(\"file1\"); <font color="#B2DFDB">//create files</font>
+        \n\t\te = new TreeNode(\"file2\");
+        \n\t\tf = new TreeNode(\"file3\");
+        \n\t\tg = new TreeNode(\"file4\");
+        \n\t\tb.left = d; <font color="#B2DFDB">//add files to the folders</font>
+        \n\t\tb.right = e;
+        \n\t\tc.left = f;
+        \n\t\tc.right = g;
+
+        \n\n\t\tdisplay(t.root); <font color="#B2DFDB">//displays all folders and files</font>
+        \n\t\tdisplayF(t.root); <font color="#B2DFDB">//displays all folders</font>
+    \n\t}
+\n}
+    </string>
+
+    <string name="graph_code">public class Main{
+    \n\tint [][]  connections;
+        \n\tObject [] locations; <font color="#FFECB3">//can point to any data type</font>
+    \n\tMain (int n){
+        \n\t\tconnections = new int [n][n];
+        \n\t\tlocations = new Object[n];
+    \n\t}
+
+    \n\tvoid setLocation (int vertex, Object location){
+        \n\t\tlocations[vertex]=location;
+    \n\t}
+
+    \n\tObject getLocation (int vertex){
+        \n\t\treturn locations[vertex];
+    \n\t}
+
+    \n\tvoid addConnection (int start, int destination, int distance){
+        \n\t\tconnections[start][destination] = distance;
+    \n\t}
+
+    \n\tboolean isConnected (int start, int destination){
+        \n\t\treturn connections[start][destination]>0;
+    \n\t}
+
+    \n\tvoid removeConnection (int start, int destination){
+        \n\t\tconnections[start][destination] = 0;
+        \n\t\tconnections[destination][start] = 0;
+    \n\t}
+
+    \n\tint getDistance (int start, int destination){
+        \n\t\t<font color="#FFECB3">//to get the path with the shortest distance</font>
+        \n\t\treturn connections[start][destination];
+    \n\t}
+
+    \n\tint [] NoOfConnections (int vertex){
+        \n\t\tint count = 0;
+        \n\t\tfor (int i=1; i&lt;connections[vertex].length; i++){
+            \n\t\t\tif (connections[vertex][i]>0)
+            \n\t\t\tcount++;
+        \n\t\t}
+        \n\t\tint[] answer= new int[count];
+        \n\t\tcount = 0;
+        \n\t\tfor (int i=1; i&lt;connections[vertex].length; i++){
+            \n\t\t\tif (connections[vertex][i]>0)
+                \n\t\t\t\tanswer[count++]=i;
+        \n\t\t}
+        \n\t\treturn answer;
+   \n\t}
+
+    \n\tvoid display(){
+        \n\t\tfor (int j=1; j&lt;connections.length; j++){
+            \n\t\t\tSystem.out.println(locations[j]+\" to:\");
+            \n\t\t\tfor (int i=1; i&lt;connections[j].length; i++){
+                \n\t\t\t\tif (connections[j][i]>0)
+                \n\t\t\t\t\tSystem.out.println(locations[i]+\" with distance \"+connections[j][i]+\" \");
+            \n\t\t\t}
+        \n\t\t}
+    \n\t}
+
+    \n\tpublic static void main (String args[]){
+        \n\t\tMain t = new Main(7);
+
+        \n\t\tt.setLocation (1, \"Location 1\");
+        \n\t\tt.setLocation (2, \"Location 2\");
+        \n\t\tt.setLocation (3, \"Location 3\");
+        \n\t\tt.setLocation (4, \"Location 4\");
+        \n\t\tt.setLocation (5, \"Location 5\");
+        \n\t\tt.setLocation (6, \"Location 6\");
+
+        \n\t\tt.addConnection (1, 4, 15);
+        \n\t\tt.addConnection (4, 1, 15);
+        \n\t\tt.addConnection (1, 3, 11);
+        \n\t\tt.addConnection (3, 1, 11);
+        \n\t\tt.addConnection (2, 3, 3);
+        \n\t\tt.addConnection (3, 2, 3);
+        \n\t\tt.addConnection (2, 4, 4);
+        \n\t\tt.addConnection (4, 2, 4);
+        \n\t\tt.addConnection (3, 5, 5);
+        \n\t\tt.addConnection (5, 3, 5);
+        \n\t\tt.addConnection (3, 6, 4);
+        \n\t\tt.addConnection (6, 3, 4);
+        \n\t\tt.addConnection (5, 6, 9);
+        \n\t\tt.addConnection (6, 5, 9);
+
+        \n\t\t<font color="#FFECB3">//if there is an obstacle</font>
+        \n\t\tt.removeConnection(1, 3);
+        \n\t\t<font color="#FFECB3">//the connection has to be removed</font>
+        \n\t\tt.display();
+
+      \n\t}
+
+ \n}
+    </string>
+</resources>
