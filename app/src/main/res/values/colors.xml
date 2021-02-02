@@ -7,6 +7,7 @@
 
     <color name="textOnSecondary">#BDBDBD</color>
     <color name="textOnPrimary">#E0E0E0</color>
+    <color name="arrow">#424242</color>
 
     <color name="array_100">#B2EBF2</color>
     <color name="linked_list_100">#F8BBD0</color>

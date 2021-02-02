@@ -1,72 +1,93 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.droideri.datastructuresinreallifenew">
-
     <application
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@mipmap/logo2"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
+        android:roundIcon="@mipmap/logo2_round"
         android:theme="@style/Theme.DataStructuresInRealLife">
         <activity
+            android:name=".Vocab"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait"/>
+        <activity
             android:name=".GraphCode"
-            android:parentActivityName=".Graph" />
-        <activity android:name=".Graph"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".Graph"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Graph"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".TreeCode"
-            android:parentActivityName=".Tree" />
+            android:parentActivityName=".Tree"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Tree"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".HashTableCode"
-            android:parentActivityName=".HashTable" />
+            android:parentActivityName=".HashTable"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".HashTable"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".HeapCode"
-            android:parentActivityName=".Heap" />
+            android:parentActivityName=".Heap"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Heap"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".QueueCode"
-            android:parentActivityName=".Queue" />
+            android:parentActivityName=".Queue"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Queue"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".StackCode"
-            android:parentActivityName=".Stack" />
+            android:parentActivityName=".Stack"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Stack"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".LinkedListCode"
-            android:parentActivityName=".LinkedList" />
+            android:parentActivityName=".LinkedList"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".LinkedList"
-            android:parentActivityName=".MainActivity" />
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ArrayCode"
-            android:parentActivityName=".Array" />
+            android:parentActivityName=".Array"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".Array"
-            android:parentActivityName=".MainActivity" />
-        <activity android:name=".MainActivity">
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".splash"
+            android:theme="@style/SplashTheme"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
     </application>
-
 </manifest>

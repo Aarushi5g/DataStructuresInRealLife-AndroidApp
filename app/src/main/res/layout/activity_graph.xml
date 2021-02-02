@@ -4,7 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:layout_height="match_parent"
     android:background="@color/primary"
     tools:context=".Graph">
 
@@ -18,14 +19,15 @@
 
         <TextView
             android:id="@+id/graphdefine"
-            android:layout_width="336dp"
+            android:layout_width="wrap_content"
+            android:layout_marginHorizontal="14dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:background="@drawable/rounded_corner"
             android:fontFamily="@font/work_sans_regular"
             android:gravity="center"
             android:lineSpacingExtra="3sp"
-            android:padding="7dp"
+            android:padding="15dp"
             android:text="@string/graphdefine"
             android:textColor="@color/textOnSecondary"
             android:textIsSelectable="true"
@@ -34,7 +36,8 @@
 
         <TextView
             android:id="@+id/graphTextProblem"
-            android:layout_width="345dp"
+            android:layout_width="wrap_content"
+            android:layout_marginHorizontal="14dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:fontFamily="@font/work_sans_regular"
@@ -47,7 +50,8 @@
 
         <ImageView
             android:id="@+id/graphImageProblem"
-            android:layout_width="360dp"
+            android:layout_width="wrap_content"
+            android:layout_marginHorizontal="14dp"
             android:layout_height="335dp"
             android:contentDescription="@string/graphproblem"
             android:src="@drawable/graph1" />
@@ -85,11 +89,21 @@
             app:rippleColor="@color/graph_100"
             android:onClick="b2Clicked"/>
 
+        <ImageView
+            android:id="@+id/graphImageS1"
+            android:layout_width="wrap_content"
+            android:layout_height="335dp"
+            android:adjustViewBounds="true"
+            android:layout_marginHorizontal="14dp"
+            android:contentDescription="@string/graphproblem"
+            app:srcCompat="@drawable/graph2"
+            android:visibility="gone"/>
+
         <TextView
             android:id="@+id/graphTextS1"
-            android:layout_width="350dp"
-            android:layout_height="120dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="14dp"
             android:lineSpacingExtra="2dp"
             android:padding="10dp"
             android:fontFamily="@font/work_sans_regular"
@@ -100,18 +114,20 @@
             android:visibility="gone"/>
 
         <ImageView
-            android:id="@+id/graphImageS1"
-            android:layout_width="360dp"
+            android:id="@+id/graphImageS2"
+            android:layout_width="wrap_content"
             android:layout_height="335dp"
+            android:adjustViewBounds="true"
+            android:layout_marginHorizontal="14dp"
             android:contentDescription="@string/graphproblem"
-            app:srcCompat="@drawable/graph2"
+            app:srcCompat="@drawable/graph3"
             android:visibility="gone"/>
 
         <TextView
             android:id="@+id/graphTextS2"
-            android:layout_width="350dp"
-            android:layout_height="120dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="14dp"
             android:lineSpacingExtra="2dp"
             android:padding="10dp"
             android:fontFamily="@font/work_sans_regular"
@@ -121,15 +137,6 @@
             android:textSize="15sp"
             android:visibility="gone"/>
 
-        <ImageView
-            android:id="@+id/graphImageS2"
-            android:layout_width="360dp"
-            android:layout_height="335dp"
-            android:layout_marginTop="0dp"
-            android:adjustViewBounds="false"
-            android:contentDescription="@string/graphproblem"
-            app:srcCompat="@drawable/graph3"
-            android:visibility="gone"/>
 
     </LinearLayout>
 </ScrollView>

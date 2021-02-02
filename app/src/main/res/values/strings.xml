@@ -14,7 +14,7 @@
     <string name="arraydefine">An array is a collection of similar items stored at contiguous memory locations. It acts as a container which can hold a fix number of items and these items should be of the same type. Most of the data structures make use of arrays to implement their algorithms.</string>
     <string name="linked_listdefine">A Linked List is a list of elements that are randomly stored in the memory and linked together. It consists of nodes where each node contains a data field and a reference to the next node in the list. They are used over arrays because the memory is allocated dynamically to these nodes.</string>
     <string name="stackdefine">A Stack is an abstract linear data structure that allows addition and removal of elements in a particular order according to the LIFO (Last In First Out) principle. Every time an element is added, it goes on the top of the stack and the only element that can be removed is also the one at the top of the stack, just like a pile of objects.</string>
-    <string name="queuedefine">A Queue is also an abstract linear data structure that follows the FIFO (First In First Out) methodology, i.e., the data item stored first will be accessed first. One end of the queue is always used to insert data (enqueue) and the other is used to remove data (dequeue).</string>
+    <string name="queuedefine">A Queue is also an abstract linear data structure that follows the FIFO (First In First Out) methodology, i.e. the data item stored first will be accessed first. One end of the queue is always used to insert data (enqueue) and the other is used to remove data (dequeue).</string>
     <string name="heapdefine">Heap is a special case of balanced binary tree data structure. A priority queue is a special type of queue in which each element is associated with a priority and is served according to its priority. Heaps are great for implementing a priority queue because of the largest and smallest element at the root of the tree for a max-heap and a min-heap respectively. </string>
     <string name="hash_tabledefine">Hash Table is a data structure which stores data in the form of key-value pairs. Thus, it becomes a data structure in which insertion and search operations are very fast if we know the index of the desired data. Hashing is a technique to convert a range of key values into a range of indexes of an array, generally, using a modulo operator.</string>
     <string name="treedefine">A tree is a non-linear hierarchical data structure that consists of nodes connected by edges. Non-linear because it does not store data in a sequential manner. In a tree, the topmost node is known as a root node. Each node contains some data and the link or reference of other nodes that can be called its children.</string>
@@ -782,4 +782,5 @@
 
  \n}
     </string>
+    <string name="vocabulary">Vocabulary</string>
 </resources>

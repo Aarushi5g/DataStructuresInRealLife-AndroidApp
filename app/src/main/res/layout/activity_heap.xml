@@ -4,7 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:layout_height="match_parent"
     android:background="@color/primary"
     tools:context=".Heap">
 
@@ -18,14 +19,15 @@
 
         <TextView
             android:id="@+id/heapdefine"
-            android:layout_width="336dp"
+            android:layout_width="wrap_content"
+            android:layout_marginHorizontal="14dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:background="@drawable/rounded_corner"
             android:fontFamily="@font/work_sans_regular"
             android:gravity="center"
             android:lineSpacingExtra="2sp"
-            android:padding="7dp"
+            android:padding="15dp"
             android:text="@string/heapdefine"
             android:textColor="@color/textOnSecondary"
             android:textIsSelectable="true"
@@ -34,7 +36,8 @@
 
         <TextView
             android:id="@+id/heapTextProblem"
-            android:layout_width="345dp"
+            android:layout_width="wrap_content"
+            android:layout_marginHorizontal="14dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:fontFamily="@font/work_sans_regular"
@@ -47,7 +50,8 @@
 
         <ImageView
             android:id="@+id/heapImageProblem"
-            android:layout_width="360dp"
+            android:layout_width="wrap_content"
+            android:layout_marginHorizontal="14dp"
             android:layout_height="335dp"
             android:contentDescription="@string/heapproblem"
             android:src="@drawable/heap1" />
@@ -85,11 +89,21 @@
             app:rippleColor="@color/heap_100"
             android:onClick="b2Clicked"/>
 
+        <ImageView
+            android:id="@+id/heapImageS1"
+            android:layout_width="wrap_content"
+            android:layout_height="335dp"
+            android:adjustViewBounds="true"
+            android:layout_marginHorizontal="14dp"
+            android:contentDescription="@string/heapproblem"
+            app:srcCompat="@drawable/heap2"
+            android:visibility="gone"/>
+
         <TextView
             android:id="@+id/heapTextS1"
-            android:layout_width="350dp"
-            android:layout_height="116dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="14dp"
             android:lineSpacingExtra="2dp"
             android:padding="10dp"
             android:fontFamily="@font/work_sans_regular"
@@ -100,18 +114,20 @@
             android:visibility="gone"/>
 
         <ImageView
-            android:id="@+id/heapImageS1"
-            android:layout_width="360dp"
+            android:id="@+id/heapImageS2"
+            android:layout_width="wrap_content"
             android:layout_height="335dp"
+            android:adjustViewBounds="true"
+            android:layout_marginHorizontal="14dp"
             android:contentDescription="@string/heapproblem"
-            app:srcCompat="@drawable/heap2"
+            app:srcCompat="@drawable/heap3"
             android:visibility="gone"/>
 
         <TextView
             android:id="@+id/heapTextS2"
-            android:layout_width="350dp"
-            android:layout_height="116dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="14dp"
             android:lineSpacingExtra="2dp"
             android:padding="10dp"
             android:fontFamily="@font/work_sans_regular"
@@ -119,16 +135,6 @@
             android:textColor="@color/textOnSecondary"
             android:textIsSelectable="true"
             android:textSize="15sp"
-            android:visibility="gone"/>
-
-        <ImageView
-            android:id="@+id/heapImageS2"
-            android:layout_width="360dp"
-            android:layout_height="335dp"
-            android:layout_marginTop="0dp"
-            android:adjustViewBounds="false"
-            android:contentDescription="@string/heapproblem"
-            app:srcCompat="@drawable/heap3"
             android:visibility="gone"/>
 
     </LinearLayout>

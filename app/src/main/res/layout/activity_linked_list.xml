@@ -4,7 +4,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    android:layout_height="match_parent"
     android:background="@color/primary"
     tools:context=".LinkedList">
 
@@ -18,14 +19,15 @@
 
         <TextView
             android:id="@+id/linked_listdefine"
-            android:layout_width="336dp"
+            android:layout_width="wrap_content"
+            android:layout_marginHorizontal="14dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:background="@drawable/rounded_corner"
             android:fontFamily="@font/work_sans_regular"
             android:gravity="center"
             android:lineSpacingExtra="3sp"
-            android:padding="7dp"
+            android:padding="15dp"
             android:text="@string/linked_listdefine"
             android:textColor="@color/textOnSecondary"
             android:textIsSelectable="true"
@@ -34,7 +36,8 @@
 
         <TextView
             android:id="@+id/linked_listTextProblem"
-            android:layout_width="345dp"
+            android:layout_width="wrap_content"
+            android:layout_marginHorizontal="14dp"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:fontFamily="@font/work_sans_regular"
@@ -47,7 +50,8 @@
 
         <ImageView
             android:id="@+id/linked_listImageProblem"
-            android:layout_width="360dp"
+            android:layout_width="wrap_content"
+            android:layout_marginHorizontal="14dp"
             android:layout_height="335dp"
             android:contentDescription="@string/linked_listproblem"
             android:src="@drawable/linked_list1" />
@@ -85,11 +89,21 @@
             app:rippleColor="@color/linked_list_100"
             android:onClick="b2Clicked"/>
 
+        <ImageView
+            android:id="@+id/linked_listImageS1"
+            android:layout_width="wrap_content"
+            android:layout_height="335dp"
+            android:adjustViewBounds="true"
+            android:layout_marginHorizontal="14dp"
+            android:contentDescription="@string/linked_listproblem"
+            app:srcCompat="@drawable/linked_list2"
+            android:visibility="gone"/>
+
         <TextView
             android:id="@+id/linked_listTextS1"
-            android:layout_width="350dp"
-            android:layout_height="135dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="14dp"
             android:lineSpacingExtra="2dp"
             android:padding="10dp"
             android:fontFamily="@font/work_sans_regular"
@@ -99,19 +113,22 @@
             android:textSize="15sp"
             android:visibility="gone"/>
 
+
         <ImageView
-            android:id="@+id/linked_listImageS1"
-            android:layout_width="360dp"
+            android:id="@+id/linked_listImageS2"
+            android:layout_width="wrap_content"
             android:layout_height="335dp"
+            android:adjustViewBounds="true"
+            android:layout_marginHorizontal="14dp"
             android:contentDescription="@string/linked_listproblem"
-            app:srcCompat="@drawable/linked_list2"
+            app:srcCompat="@drawable/linked_list3"
             android:visibility="gone"/>
 
         <TextView
             android:id="@+id/linked_listTextS2"
-            android:layout_width="350dp"
-            android:layout_height="135dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="14dp"
             android:lineSpacingExtra="2dp"
             android:padding="10dp"
             android:fontFamily="@font/work_sans_regular"
@@ -119,16 +136,6 @@
             android:textColor="@color/textOnSecondary"
             android:textIsSelectable="true"
             android:textSize="15sp"
-            android:visibility="gone"/>
-
-        <ImageView
-            android:id="@+id/linked_listImageS2"
-            android:layout_width="360dp"
-            android:layout_height="335dp"
-            android:layout_marginTop="0dp"
-            android:adjustViewBounds="false"
-            android:contentDescription="@string/linked_listproblem"
-            app:srcCompat="@drawable/linked_list3"
             android:visibility="gone"/>
 
     </LinearLayout>
